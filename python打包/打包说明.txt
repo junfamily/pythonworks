@@ -1,0 +1,9 @@
+常用工具有
+cx_Freeze
+py2exe
+PyInstaller。
+
+1.打开cmd
+2.切换到文件目录
+3.输入
+　　　python setup.py py2exe

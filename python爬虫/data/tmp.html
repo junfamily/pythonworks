@@ -1,0 +1,1158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title>餐饮/住宿,丽水</title>
+<meta name="keywords" content="Meta Keywords" />
+<meta name="description" content="Meta Description" />
+<!--[if IE 6]>
+<script src="/static/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>DD_belatedPNG.fix('.png');</script>
+<![endif]--> <link rel="stylesheet" type="text/css" href="/templates/main/sjdq-2012/css_common.css" />
+<link rel="stylesheet" type="text/css" href="/static/images/mdialog.css" />
+<script type="text/javascript" src="/data/cachefiles/config.js"></script>
+<script type="text/javascript">var mod = modules['item'];</script>
+<script type="text/javascript" src="/static/javascript/jquery.js"></script>
+<script type="text/javascript" src="/static/javascript/common.js"></script>
+<script type="text/javascript" src="/static/javascript/mdialog.js"></script>
+<script type="text/javascript">
+
+function my_main_show_seccode(obj,id) {
+	var div = $('#'+id);
+	if(!div[0]) return;
+	if(div.attr('show')=='Y') return;
+	
+    var pos = find_pos(obj);
+
+	div.css('visibility','visible').attr('show','Y').
+		css("left",pos.x).css("top", pos.y + 25).
+		css('zIndex',100).css('display','');
+
+	show_seccode('login_seccode');
+	var seccode = $("[name=seccode]");
+	if(!seccode[0]) return;
+	var txt = '验证码';
+	if(seccode!=''||seccode!=txt) seccode.val(txt).css('color','gray');
+	seccode.focus(function() {
+		if($(this).val()==''||$(this).val()==txt) $(this).val('');
+	}).keydown(function(event) {
+		if(event.keyCode == 13) {
+			main_login();
+		}
+	});
+}
+
+</script><style type="text/css">@import url("/templates/main/sjdq-2012/css_item.css");</style><script type="text/javascript" src="/static/javascript/member.js"></script><script type="text/javascript" src="/static/javascript/item.js"></script></head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="28" align="center" bgcolor="#f2f2f2"><table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left" class="t_2" width="420">
+                
+        <a href="/index.html" class="hui12">首页</a>
+                
+         | <a href="/item-map.html" class="hui12">商家地图</a>
+                
+         | <a href="/item.html" class="hui12">商家名录</a>
+                
+         | <a href="/article.html" class="hui12">商家活动</a>
+                
+         | <a href="http://bbs.inlishui.com/forum-87-1.html" class="hui12" target="_blank">绿谷拍客</a>
+                
+         | <a href="http://act.inlishui.com" class="hui12" target="_blank">精彩专题</a>
+                
+         | <a href="http://www.inlishui.com" class="hui12" target="_blank">丽水信息港</a>
+                
+        </td>
+        <td align="right" class="t_2"><div class="charmenu">
+                        <div id="login_0" style="display:none;">
+                <div class="mainlogin">
+                                        <form method="post" id="main_frm_login" action="/member-login-op-login-rand-AB1L6.html">
+	                                    <input type="text" name="username" id="main_username" class="t_input mainlogin-u" onfocus="main_username_check(this);" onblur="main_username_check(this);" tabindex=1>
+                    <input type="password" name="password" id="main_password" class="t_input mainlogin-p" tabindex=2>&nbsp;
+                    <input type="button" value="登录" onclick="main_login();" tabindex=5>&nbsp;
+                    <input type="checkbox" name="life" value="2592000" tabindex=4 /><label for="life">记住</label>&nbsp;
+                    <a href="/member-reg.html">注册</a>
+                    <a href="/member-login-op-forget.html">找回密码</a>
+                    <input type="hidden" name="onsubmit" value="yes">
+                                        </form>
+                </div>
+            </div>
+                                                <div id="login_1" class="mainuser" style="display:none;">
+                <div class="mainuser-operation-foo"><span><a href="/member.html"><img width="20" height="20" style="vertical-align:middle;" src="http://bbs.inlishui.com/uc_server/avatar.php?uid=0&type=virtual&size=normal" /></a><a href="/member.html" id="login_name"></a></span><span class="xsplit">|</span>等级积分<b>:</b><span class="arrwd-ico" id="assistant_point" rel="/member-index-ac-point-op-headerget.html"><span id="login_point"></span></span><span class="xsplit">|</span><span class="arrwd-ico" id="assistant_menu" rel="assistant_menu_box"><a href="/member.html">我的助手</a></span><span class="xsplit">|</span><span><a href="/member-index-ac-task.html">任务</a><span id="login_task" style="display:none;"></span></span><span class="xsplit">|</span><a href="/member-index-ac-pm-folder-inbox.html">短信箱</a><span id="login_newmsg" style="display:none;">(0)</span><span class="xsplit">|</span><a href="/member-login-op-logout.html">退出</a></div>
+            </div>
+            <div id="login_2" style="display:none;">
+                <span id="login_activation"></span>,<a href="/ucenter-activation-auth-_activationauth_.html" id="login_activation_a">您的帐号需要激活</a> [<a href="/member-login-op-logout.html">退出</a>]
+            </div>
+        </div></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+<form method="get" action="/index.php">
+<input type="hidden" name="act" value="search" />
+<input type="hidden" name="ordersort" value="addtime" />
+<input type="hidden" name="ordertype" value="desc" />
+<input type="hidden" name="searchsubmit" value="yes" /><input type="hidden" id="module_flag" name="module_flag" value="item" />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="60" align="center" background="/templates/main/sjdq-2012/image/index_top_bg.gif"><table width="980" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="200" align="left"><a href="/index.html" title="丽水信息港-商家大全"><img src="/templates/main/sjdq-2012/image/logo.gif" width="174" height="60" border="0" /></a></td>
+        <td align="left"><table width="100" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="7"></td>
+            </tr>
+          </table>
+                
+                  <a href="/index.html" class="bai14" target="_self">首页</a>&nbsp;
+        
+                  <a href="/article-list.html" class="bai14">活动</a>&nbsp;
+        
+                  <a href="/item.html" class="bai14">商家</a>&nbsp;
+        
+                  <a href="/item-album.html" class="bai14">相册</a>&nbsp;
+        
+                  <a href="/tuan.html" class="bai14">绿谷团</a>&nbsp;
+        
+                  <a href="/coupon.html" class="bai14">优惠</a>&nbsp;
+        
+        </td>
+        <td align="right"><div id="select_module">
+        	<div id="select_value">找商家</div>
+        	<ul id="select_list" style="display:none;">
+        
+        		<li value="item">找商家</li>
+        
+        		<li value="article">找活动</li>
+        
+        		<li value="coupon">找优惠</li>
+        
+        	</ul>
+        </div></td>
+        <td width="250" align="right"><input name="keyword" type="text" class="kuang_ss_1" size="35" value="" /></td>
+        <td width="81" align="right"><input type="image" src="/templates/main/sjdq-2012/image/ss_03.gif" style="width:81px; height:30px;" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</form>
+<script type="text/javascript">
+$('#select_module').mouseover(function() {
+	$('#select_list').show();
+}).mouseout(function() {
+	$('#select_list').hide();
+});
+$('#select_list li').each(function(i, item) {
+	$(item).click(function() {
+		$('#select_value').html(this.innerHTML);
+		$('#module_flag').val(this.getAttribute('value'));
+		$('#select_list').hide();
+	}).mouseover(function() {
+		$(this).addClass('hover');
+	}).mouseout(function() {
+		$(this).removeClass('hover');
+	});
+});
+</script>
+
+<!-- 切换城市 下拉菜单 -->
+<div id="city_menu_box" class="comm-dropdown-city">
+    <ul>
+                
+        <li class="current"><a href="/index-city-city_id-1.html">丽水</a></li>
+                    </ul>
+    </div><script type="text/javascript">
+$("#city_menu_src").powerFloat({offsets:{x:0,y:2}});
+</script><!-- 我的助手 下拉菜单 -->
+<ul id="assistant_menu_box" class="dropdown-menu">
+    <li><a href="/member-index-ac-point.html">我的积分</a></li>
+    <li><a href="/member-index-ac-task.html">我的任务</a></li>
+    <li><a href="/member-index-ac-myset.html">个人设置</a></li>
+    <li><a href="/member-index-ac-face.html">修改头像</a></li>
+</ul>
+<!-- 积分数据 -->
+
+<script type="text/javascript" src="/static/javascript/login.js"></script>
+
+<div class="page">
+
+
+  <table width="980" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#d4d4d4">
+  <tr>
+    <td width="978" align="center" valign="top" bgcolor="#FFFFFF"><table width="978" border="0" cellpadding="0" cellspacing="0" background="/templates/main/sjdq-2012/image/index_ml_01.gif">
+      <tr>
+        <td width="598" height="33" align="left"><img src="/templates/main/sjdq-2012/image/ml_02.gif" width="84" height="33" /></td>
+        <td width="360" align="right">本站共有 <strong class="shangjia_hueifu">1587</strong> 家商家</td>
+        <td width="20">&nbsp;</td>
+      </tr>
+    </table>
+      <table width="657" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="657" height="10"></td>
+        </tr>
+      </table>
+      <table width="940" border="0" cellpadding="0" cellspacing="0" class="zi_gao_1">
+        <tr>
+          <td width="75" align="right" valign="top" class="t_2" style="font-weight:bold;">分类：</td>
+          <td align="left" valign="top" class="t_2 item_attr_list"><a href="/item-list-catid-88-aid-0.html" class="lan12 selected">餐饮/住宿</a> | <a href="/item-list-catid-89-aid-0.html" class="lan12">休闲/娱乐</a> | <a href="/item-list-catid-90-aid-0.html" class="lan12">婚嫁/丽人</a> | <a href="/item-list-catid-91-aid-0.html" class="lan12">母婴/儿童</a> | <a href="/item-list-catid-92-aid-0.html" class="lan12">生活/购物</a> | <a href="/item-list-catid-93-aid-0.html" class="lan12">数码/电器</a> | <a href="/item-list-catid-94-aid-0.html" class="lan12">房产/家居</a> | <a href="/item-list-catid-95-aid-0.html" class="lan12">车辆/旅游</a> | <a href="/item-list-catid-96-aid-0.html" class="lan12">文化/培训</a> | <a href="/item-list-catid-97-aid-0.html" class="lan12">农贸/特产</a> | <a href="/item-list-catid-98-aid-0.html" class="lan12">银行</a>          </td>
+        </tr>
+      </table>
+      
+            
+                  
+            <table width="940" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif" height="10"></td>
+        </tr>
+      </table>
+      <table width="940" border="0" cellpadding="0" cellspacing="0" class="zi_gao_1">
+        <tr>
+          <td width="75" align="right" valign="top" class="t_2" style="font-weight:bold;">餐饮住宿：</td>
+          <td align="left" valign="top" class="t_2 item_attr_list"><a href="/item-list-catid-88-aid-0-att-1.231.html" class="ju12
+">火锅</a> | <a href="/item-list-catid-88-aid-0-att-1.229.html" class="lan12">小吃</a> | <a href="/item-list-catid-88-aid-0-att-1.239.html" class="lan12">咖啡</a> | <a href="/item-list-catid-88-aid-0-att-1.717.html" class="lan12">日本料理</a> | <a href="/item-list-catid-88-aid-0-att-1.718.html" class="ju12
+">韩国料理</a> | <a href="/item-list-catid-88-aid-0-att-1.227.html" class="ju12
+">西餐</a> | <a href="/item-list-catid-88-aid-0-att-1.233.html" class="lan12">农家</a> | <a href="/item-list-catid-88-aid-0-att-1.235.html" class="lan12">自助</a> | <a href="/item-list-catid-88-aid-0-att-1.226.html" class="lan12">烤涮</a> | <a href="/item-list-catid-88-aid-0-att-1.232.html" class="ju12
+">海鲜</a> | <a href="/item-list-catid-88-aid-0-att-1.224.html" class="lan12">川菜</a> | <a href="/item-list-catid-88-aid-0-att-1.225.html" class="lan12">面食</a> | <a href="/item-list-catid-88-aid-0-att-1.228.html" class="lan12">快餐</a> | <a href="/item-list-catid-88-aid-0-att-1.243.html" class="lan12">住宿</a> | <a href="/item-list-catid-88-aid-0-att-1.240.html" class="lan12">甜品蛋糕</a> | <a href="/item-list-catid-88-aid-0-att-1.234.html" class="lan12">中式正餐</a> | <a href="/item-list-catid-88-aid-0-att-1.237.html" class="lan12">茶楼</a>          </td>
+        </tr>
+      </table>
+            
+            
+            <table width="940" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif" height="10"></td>
+        </tr>
+      </table>
+      <table width="940" border="0" cellpadding="0" cellspacing="0" class="zi_gao_1">
+        <tr>
+          <td width="75" align="right" valign="top" class="t_2" style="font-weight:bold;">地区：</td>
+          <td align="left" valign="top" class="t_2 item_attr_list"><a href="/item-list-catid-88-aid-2.html" class="lan12">莲都</a>
+ | <a href="/item-list-catid-88-aid-3.html" class="lan12">龙泉</a>
+ | <a href="/item-list-catid-88-aid-4.html" class="lan12">青田</a>
+ | <a href="/item-list-catid-88-aid-5.html" class="lan12">缙云</a>
+ | <a href="/item-list-catid-88-aid-6.html" class="lan12">遂昌</a>
+ | <a href="/item-list-catid-88-aid-7.html" class="lan12">松阳</a>
+ | <a href="/item-list-catid-88-aid-8.html" class="lan12">景宁</a>
+ | <a href="/item-list-catid-88-aid-9.html" class="lan12">云和</a>
+ | <a href="/item-list-catid-88-aid-10.html" class="lan12">庆元</a>
+          </td>
+        </tr>
+      </table>
+            
+            
+      <table width="657" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="657" height="10"></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+  <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top">
+      <table width="670" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+		<ul class="cate_list clearfix"><li class="first selected"><a href="javascript:;" onclick="list_display('item_subject_orderby','finer');">全部商家</a></li><li><a href="javascript:;" onclick="list_display('item_subject_orderby','pageviews');">人气商家</a></li><li><a href="javascript:;" onclick="list_display('item_subject_orderby','guestbooks');">留言最多的商家</a></li><li><a href="javascript:;" onclick="list_display('item_subject_orderby','addtime');">最新加盟的商家</a></li></ul>
+          </td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="10" cellspacing="0" class="xsfl_kuang" >
+        <tr>
+          <td width="481" class="order_btns">
+          <strong>排列</strong>: 
+          <span class="selected"><a href="javascript:;" class="no_arrow" onclick="list_display('item_subject_type','normal')">图文</a></span>
+          
+          <span><a href="javascript:;" class="no_arrow" onclick="list_display('item_subject_type','pic')">图片</a></span>
+          
+ &nbsp; 
+          <strong>数量</strong>: 
+          <span><a href="javascript:;" class="no_arrow" onclick="list_display('item_subject_num','10')">10</a></span>
+          
+          <span class="selected"><a href="javascript:;" class="no_arrow" onclick="list_display('item_subject_num','20')">20</a></span>
+          
+          <span><a href="javascript:;" class="no_arrow" onclick="list_display('item_subject_num','40')">40</a></span>
+          
+ &nbsp; 
+          </td>
+          <td width="147" align="right"></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+                
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3082.html"><img  src="/uploads/pictures/2012-09/thumb_32_1348024194.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3082.html" title="佳和大酒店" target="_blank" class="shangjia_mingchen">佳和大酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="佳和大酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2109999</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市丽阳街855号(与紫金路十字路口)&nbsp;&nbsp;<a href="/item-bigmap-id-3082.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">2</a>条留言，<a href="#" class="shangjia_map">18</a>张图片，<span style="color:#0066FF;">798</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3299.html"><img  src="/uploads/pictures/2012-08/thumb_86_1345627288.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3299.html" title="鑫聚轩茶餐厅" target="_blank" class="shangjia_mingchen">鑫聚轩茶餐厅</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="鑫聚轩茶餐厅" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2179688</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>括苍路（人力资源市场边）&nbsp;&nbsp;<a href="/item-bigmap-id-3299.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">8</a>条留言，<a href="#" class="shangjia_map">12</a>张图片，<span style="color:#0066FF;">1241</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3013.html"><img  src="/uploads/pictures/2012-06/thumb_53_1340697914.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3013.html" title="丽水市天溢大酒店" target="_blank" class="shangjia_mingchen">丽水市天溢大酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水市天溢大酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>&nbsp;0578-2168666&nbsp;&nbsp;2168777&nbsp;</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市紫金路与华敦街十字路口&nbsp;&nbsp;&nbsp;<a href="/item-bigmap-id-3013.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">95</a>条留言，<a href="#" class="shangjia_map">22</a>张图片，<span style="color:#0066FF;">2471</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3268.html"><img  src="/uploads/pictures/2012-07/thumb_78_1343293728.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3268.html" title="红楼商务宾馆" target="_blank" class="shangjia_mingchen">红楼商务宾馆</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="红楼商务宾馆" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2226388</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>宇雷路552-558号（解放街交叉路口往前100米）&nbsp;&nbsp;<a href="/item-bigmap-id-3268.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">5</a>条留言，<a href="#" class="shangjia_map">9</a>张图片，<span style="color:#0066FF;">772</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3156.html"><img  src="/upload_old/2012-02/iv_20120223143411569.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3156.html" title="南贸时尚宾馆" target="_blank" class="shangjia_mingchen">南贸时尚宾馆</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="南贸时尚宾馆" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2568899</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市解放街529号(解放街与紫金路路口，稠州银行隔壁)&nbsp;&nbsp;<a href="/item-bigmap-id-3156.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">6</a>条留言，<a href="#" class="shangjia_map">30</a>张图片，<span style="color:#0066FF;">1894</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-5.html"><img  src="/upload_old/firm_signimg/200612693146.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-5.html" title="喜尔顿·温馨家园大酒店" target="_blank" class="shangjia_mingchen">喜尔顿·温馨家园大酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="喜尔顿·温馨家园大酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2908888</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>浙江省丽水市丽青路580-588号&nbsp;&nbsp;<a href="/item-bigmap-id-5.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">303</a>条留言，<a href="#" class="shangjia_map">19</a>张图片，<span style="color:#0066FF;">7223</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-633.html"><img  src="/upload_old/2012-03/iv_20120305135332483.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-633.html" title="丽水新世界大酒店" target="_blank" class="shangjia_mingchen">丽水新世界大酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水新世界大酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2352888, 0578-2358888</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市丽青路219号&nbsp;&nbsp;<a href="/item-bigmap-id-633.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">167</a>条留言，<a href="#" class="shangjia_map">29</a>张图片，<span style="color:#0066FF;">1475</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-634.html"><img  src="/upload_old/firm_signimg/20067385533.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-634.html" title="丽水市东方宾馆有限公司" target="_blank" class="shangjia_mingchen">丽水市东方宾馆有限公司</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水市东方宾馆有限公司" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2686188, 0578-2119861</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市中山街433号&nbsp;&nbsp;<a href="/item-bigmap-id-634.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">103</a>条留言，<a href="#" class="shangjia_map">21</a>张图片，<span style="color:#0066FF;">1883</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-1651.html"><img  src="/upload_old/firm_signimg/200722790949.gif" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-1651.html" title="丽水市莲城宾馆" target="_blank" class="shangjia_mingchen">丽水市莲城宾馆</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水市莲城宾馆" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2281558　0578-2281501, 0578-2281600</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市丽阳街254号&nbsp;&nbsp;<a href="/item-bigmap-id-1651.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">84</a>条留言，<a href="#" class="shangjia_map">11</a>张图片，<span style="color:#0066FF;">1624</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-2421.html"><img  src="/upload_old/2010-11/iv_20101109142522650.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-2421.html" title="丽水市旺角时尚酒店" target="_blank" class="shangjia_mingchen">丽水市旺角时尚酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水市旺角时尚酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2511999&nbsp;, 0578-2311999</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市丽青路183号&nbsp;&nbsp;<a href="/item-bigmap-id-2421.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">56</a>条留言，<a href="#" class="shangjia_map">19</a>张图片，<span style="color:#0066FF;">1517</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-2791.html"><img  src="/upload_old/firm_signimg/200948103517.gif" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-2791.html" title="丽水市罗马假日酒店" target="_blank" class="shangjia_mingchen">丽水市罗马假日酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水市罗马假日酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2185888, 0578-2187828</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>浙江省丽水市大洋路568号&nbsp;&nbsp;<a href="/item-bigmap-id-2791.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">171</a>条留言，<a href="#" class="shangjia_map">21</a>张图片，<span style="color:#0066FF;">1776</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-2940.html"><img  src="/upload_old/firm_signimg/2009410164232.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-2940.html" title="新天香楼" target="_blank" class="shangjia_mingchen">新天香楼</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="新天香楼" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>2174418</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>解放街398号二楼&nbsp;&nbsp;<a href="/item-bigmap-id-2940.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">23</a>条留言，<a href="#" class="shangjia_map">6</a>张图片，<span style="color:#0066FF;">1245</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-2946.html"><img  src="/upload_old/firm_signimg/2009525104506.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-2946.html" title="丽水府城商务大酒店" target="_blank" class="shangjia_mingchen">丽水府城商务大酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水府城商务大酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2668899</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市紫金路528号&nbsp;&nbsp;<a href="/item-bigmap-id-2946.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">80</a>条留言，<a href="#" class="shangjia_map">42</a>张图片，<span style="color:#0066FF;">1772</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-2988.html"><img  src="/upload_old/2009-09/iv_20090901113349758.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-2988.html" title="香江商务大酒店" target="_blank" class="shangjia_mingchen">香江商务大酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="香江商务大酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2560888&nbsp;0578-2506666</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市宇雷路227号&nbsp;&nbsp;<a href="/item-bigmap-id-2988.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">74</a>条留言，<a href="#" class="shangjia_map">36</a>张图片，<span style="color:#0066FF;">1224</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-2991.html"><img  src="/upload_old/2009-09/iv_20090901094919842.gif" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-2991.html" title="星光大道商务酒店" target="_blank" class="shangjia_mingchen">星光大道商务酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="星光大道商务酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2185800</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽阳街1119号（星光大道KTV隔壁）&nbsp;&nbsp;<a href="/item-bigmap-id-2991.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">19</a>条留言，<a href="#" class="shangjia_map">13</a>张图片，<span style="color:#0066FF;">1220</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-2993.html"><img  src="/upload_old/2009-09/iv_20090901113711427.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-2993.html" title="丽水紫金花园大酒店" target="_blank" class="shangjia_mingchen">丽水紫金花园大酒店</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水紫金花园大酒店" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-2168888&nbsp;</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>浙江省丽水市紫金路339号&nbsp;&nbsp;<a href="/item-bigmap-id-2993.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">68</a>条留言，<a href="#" class="shangjia_map">18</a>张图片，<span style="color:#0066FF;">2169</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3016.html"><img  src="/upload_old/2009-09/iv_20090923082357195.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3016.html" title="丽水市地中海商务宾馆" target="_blank" class="shangjia_mingchen">丽水市地中海商务宾馆</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水市地中海商务宾馆" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>&nbsp;0578-2668877</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>&nbsp;丽水市大众街92号&nbsp;&nbsp;<a href="/item-bigmap-id-3016.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">115</a>条留言，<a href="#" class="shangjia_map">16</a>张图片，<span style="color:#0066FF;">1529</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3027.html"><img  src="/upload_old/2010-01/iv_20100126153950142.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3027.html" title="丽水大厦宾馆" target="_blank" class="shangjia_mingchen">丽水大厦宾馆</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水大厦宾馆" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>05782201699</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>&nbsp;浙江省丽水市莲都区中山街487号&nbsp;&nbsp;<a href="/item-bigmap-id-3027.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">43</a>条留言，<a href="#" class="shangjia_map">12</a>张图片，<span style="color:#0066FF;">1399</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3048.html"><img  src="/upload_old/2010-04/iv_20100406100737663.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3048.html" title="康舒煲仔饭" target="_blank" class="shangjia_mingchen">康舒煲仔饭</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="康舒煲仔饭" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>0578-26626332662677</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>丽水市城东小区6幢6号（梅山中学对面）&nbsp;&nbsp;<a href="/item-bigmap-id-3048.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">64</a>条留言，<a href="#" class="shangjia_map">18</a>张图片，<span style="color:#0066FF;">4362</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="15">
+        <tr>
+          <td width="92"><table width="92" border="0" cellpadding="5" cellspacing="1" bgcolor="#E7E7E7">
+            <tr>
+              <td width="80" bgcolor="#FFFFFF"><a href="/item-3069.html"><img  src="/upload_old/2012-03/iv_20120312153939740.jpg" width="80" height="80" /></a></td>
+            </tr>
+          </table></td>
+          <td width="533" valign="top"><table width="533" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="501"><table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><span class="zi_gao_25"><strong>店名：</strong><a href="/item-3069.html" title="丽水市食享花园餐厅" target="_blank" class="shangjia_mingchen">丽水市食享花园餐厅</a></span></td>
+                    <td width="25" align="right"><a href="/ls634/" title="丽水市食享花园餐厅" target="_blank" class="shangjia_mingchen"></a></td>
+                  </tr>
+              </table></td>
+              <td width="32"></td>
+            </tr>
+                        <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong><strong>电话</strong>：</strong><span class="shangjia_hueifu"><strong>&nbsp;0578-2211212</strong></span></span></td>
+            </tr>
+                                    <tr>
+              <td colspan="2"><span class="zi_gao_25"><strong>地址：</strong>&nbsp;丽水市白云山森林公园8号公馆&nbsp;&nbsp;<a href="/item-bigmap-id-3069.html" target="_blank" class="shangjia_map">查看网络地图</a></span></td>
+            </tr>
+                        <tr>
+              <td colspan="2" class="zi_gao_25">共有<a href="#" class="shangjia_map">28</a>条留言，<a href="#" class="shangjia_map">43</a>张图片，<span style="color:#0066FF;">2667</span>次访问</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="670" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="670" height="10" valign="top" background="/templates/main/sjdq-2012/image/tuanjia_dian_di.gif"></td>
+        </tr>
+      </table>
+                    <table width="670" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="670" height="60" align="center"><div class="p_bar"><span class="p_info">368</span><span class="p_curpage">1</span><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-2.html" class="p_num">2</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-3.html" class="p_num">3</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-4.html" class="p_num">4</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-5.html" class="p_num">5</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-6.html" class="p_num">6</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-7.html" class="p_num">7</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-8.html" class="p_num">8</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-9.html" class="p_num">9</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-10.html" class="p_num">10</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-2.html" class="p_redirect" nextpage="Y">&gt;</a><a href="/item-list-catid-88-aid-0-type-normal-num-20-total-368-page-19.html" class="p_redirect">&gt;&gt;</a></div></td>
+        </tr>
+      </table>
+            </td>
+    <td width="300" valign="top"><table width="300" border="0" cellpadding="1" cellspacing="1" bgcolor="#e1e1e1">
+      <tr>
+        <td align="center" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="33" align="left" background="/templates/main/sjdq-2012/image/index_ml_01.gif"><img src="/templates/main/sjdq-2012/image/ml_04.gif" width="79" height="33" /></td>
+            <td width="40" align="left" background="/templates/main/sjdq-2012/image/index_ml_01.gif"><a href="/tuan.html" class="lan12">更多</a></td>
+          </tr>
+        </table>
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="10"></td>
+            </tr>
+          </table>
+                    
+          <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><a href="/tuan-detail-id-86.html" target="_blank"><img src="uploads/tuan/2012-09/70_1348559327.jpg" width="275" height="207" border="0" /></a></td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="5"></td>
+              </tr>
+            </table>
+                      <table width="270" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="18" align="left" class="t_6">市场价：￥218</td>
+              </tr>
+            </table>
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="5"></td>
+              </tr>
+            </table>
+                      <table width="270" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left">团购价：<span class="t_7">￥98</span></td>
+                <td align="right">已有<span class="zi_hongse" style="font-weight: bold">0</span>人购买 </td>
+              </tr>
+            </table>
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="8"></td>
+              </tr>
+            </table>
+          <table width="270" border="0" cellpadding="0" cellspacing="0" class="zi_12_gao_20_666666">
+              <tr>
+                <td align="left"><a href="/tuan-detail-id-86.html" target="_blank">中秋送礼！100%法国原装进口圣堡露朗斯干红葡萄酒，原价21...</a></td>
+              </tr>
+            </table>
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="10"></td>
+              </tr>
+          </table>
+                  </td>
+      </tr>
+    </table>
+      <table width="100" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="300" height="11"></td>
+        </tr>
+      </table>
+      <table width="300" border="0" cellpadding="1" cellspacing="1" bgcolor="#e1e1e1">
+      <tr>
+        <td align="center" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="33" align="left" background="/templates/main/sjdq-2012/image/index_ml_01.gif"><img src="/templates/main/sjdq-2012/image/ml_07.gif" width="95" height="33" /></td>
+            <td width="40" align="left" background="/templates/main/sjdq-2012/image/index_ml_01.gif"><a href="/coupon.html" class="lan12">更多</a></td>
+          </tr>
+        </table>
+          <table width="100" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="10"></td>
+            </tr>
+          </table>
+          
+                  </td>
+      </tr>
+    </table>
+      <table width="100" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="300" height="11"></td>
+        </tr>
+      </table>
+      <table width="300"  border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="300">
+</td>
+        </tr>
+      </table>
+      <table width="300" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="300" height="11"></td>
+        </tr>
+      </table>
+      <table width="300" border="0" cellpadding="1" cellspacing="1" bgcolor="#e1e1e1">
+        <tr>
+          <td valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="left" background="/templates/main/sjdq-2012/image/index_ml_01.gif"><img src="/templates/main/sjdq-2012/image/ml_06.gif" width="153" height="33" /></td>
+            </tr>
+          </table>
+            <table width="100" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="10"></td>
+              </tr>
+            </table>
+            
+<table width="282" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#E3E3E3">
+  <tr>
+    <td width="270" height="8" bgcolor="#FFFFFF"><a href="http://house.inlishui.com/zt/5yzx/" title="专题1" target="_blank"><img src="/uploads/adv/2012-05/28_1337737407.jpg" width="270" height="80" alt="专题1" /></a></td>
+  </tr>
+</table>
+<table width="296" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="296" height="8"></td>
+  </tr>
+</table><table width="282" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#E3E3E3">
+  <tr>
+    <td width="270" height="8" bgcolor="#FFFFFF"><a href="http://act.inlishui.com/2011/zt/ss2011/" title="专题2" target="_blank"><img src="/uploads/adv/2012-05/71_1337737487.jpg" width="270" height="80" alt="专题2" /></a></td>
+  </tr>
+</table>
+<table width="296" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="296" height="8"></td>
+  </tr>
+</table><table width="282" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#E3E3E3">
+  <tr>
+    <td width="270" height="8" bgcolor="#FFFFFF"><a href="http://act.inlishui.com/2011/zt/kf/" title="专题3" target="_blank"><img src="/uploads/adv/2012-05/80_1337737581.jpg" width="270" height="80" alt="专题3" /></a></td>
+  </tr>
+</table>
+<table width="296" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="296" height="8"></td>
+  </tr>
+</table>            </td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</div>
+<div style="margin-top:20px; background:#e5e5e5;">
+<div id="footer"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30" align="center"><span class="t_tg_hui">
+      
+      [ <a href="http://shangjia.inlishui.com/act/2012/sjsx/" class="hui12_1" target="_blank">商家大全简介</a> ]
+      
+       - [ <a href="http://www.inlishui.com/info/bj/sj.asp" class="hui12_1" target="_blank">广告服务</a> ]
+      
+       - [ <a href="http://shangjia.inlishui.com/about-page-info-fwtk.html" class="hui12_1">服务条款</a> ]
+      
+       - [ <a href="http://shangjia.inlishui.com/item-map.html" class="hui12_1">商家地图</a> ]
+      
+       - [ <a href="http://shangjia.inlishui.com/about-page-info-intro.html" class="hui12_1">帮助手册</a> ]
+      
+    </span></td>
+  </tr>
+</table>
+    <div>
+                  Copyright &#169; 2003 inlishui.com All Rights Reserved &#160;
+丽水市正阳网络技术有限公司 版权所有<br />商家大全服务电话：0578-2135912 &nbsp; &nbsp; 团购咨询电话：0578-2126352<br />免责声明：站内会员言论仅代表个人观点，并不代表本站同意其观点，本站不承担由此引起的法律责任。
+<!-- 百度统计inlishui.com begin -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F374a1c7152172c9e48591c89b1f75e69' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- 百度统计 end -->    </div>
+    </div>
+</div>
+<script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=95594" charset="utf-8"></script></body>
+</html>
