@@ -9,3 +9,5 @@ print datetime.datetime.now()
 import time
 print time.time()
 
+import django
+print(django.get_version())
